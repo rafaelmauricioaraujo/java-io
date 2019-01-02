@@ -12,10 +12,12 @@ public class TesteLeitura {
 		FileInputStream fis = new FileInputStream("lorem.txt");
 		InputStreamReader isr = new InputStreamReader(fis);
 		BufferedReader br = new BufferedReader(isr);
-		String linha = br.readLine();
+		String linha;
 		
-		System.out.println(linha);
-		
+		while(br.readLine() != null) {
+			linha = br.readLine();
+			System.out.println(linha);
+		}
 		br.close();
 	}
 }

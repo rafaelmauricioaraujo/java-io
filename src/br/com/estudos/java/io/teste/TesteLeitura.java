@@ -16,6 +16,6 @@ public class TesteLeitura {
 		
 		System.out.println(linha);
 		
+		br.close();
 	}
-
 }

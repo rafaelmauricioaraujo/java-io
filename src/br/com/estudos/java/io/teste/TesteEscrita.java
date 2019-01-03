@@ -9,7 +9,7 @@ import java.io.Writer;
 
 public class TesteEscrita {
 	public static void main(String[] args) throws IOException {
-		//input flow with some file
+		//output flow with some file
 		OutputStream fos = new FileOutputStream("lorem2.txt");
 		Writer osw = new OutputStreamWriter(fos);
 		BufferedWriter bw = new BufferedWriter(osw);

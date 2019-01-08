@@ -1,1 +1,3 @@
-Fazendo alguns testes com escrita de arquivos, agora através do console, usando o System.in
+Testando a escrita de uma nova linha no arquivo
+
+lalalalaaalala

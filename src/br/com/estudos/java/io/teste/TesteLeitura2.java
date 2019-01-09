@@ -10,9 +10,12 @@ public class TesteLeitura2 {
 		
 		Scanner scanner = new Scanner(new File("contas.csv"));
 		
-		String linha = scanner.nextLine();
+		String linha;
 		
-		System.out.println(linha);
+		while(scanner.hasNextLine()) {
+			linha = scanner.nextLine();
+			System.out.println(linha);
+		}
 		
 		scanner.close();
 	}

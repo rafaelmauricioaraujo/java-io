@@ -30,8 +30,10 @@ public class TesteEscrita2 {
 		bw.write("Testando a escrita com uma classe de mais alto nível");
 		//fw.write("\r\n");
 		//fw.write("\r\n");
-		bw.write(System.lineSeparator());
-		bw.write(System.lineSeparator());
+		//bw.write(System.lineSeparator());
+		//bw.write(System.lineSeparator());
+		bw.newLine();
+		bw.newLine();
 		bw.newLine();
 		bw.write("Lalalalllallalla");
 		

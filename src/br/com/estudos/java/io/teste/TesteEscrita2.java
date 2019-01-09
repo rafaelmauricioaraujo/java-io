@@ -27,10 +27,10 @@ public class TesteEscrita2 {
 		
 		FileWriter fw = new FileWriter("lorem2.txt");
 		fw.write("Testando a escrita com uma classe de mais alto nível");
-		fw.write("\n");
+		fw.write("\r\n");
+		fw.write("\r\n");
 		fw.write("Lalalalllallalla");
 		
-		
-		
+		fw.close();
 	}
 }

@@ -26,13 +26,15 @@ public class TesteEscrita2 {
 
 		
 		FileWriter fw = new FileWriter("lorem2.txt");
-		fw.write("Testando a escrita com uma classe de mais alto nível");
+		BufferedWriter bw = new BufferedWriter(fw);
+		bw.write("Testando a escrita com uma classe de mais alto nível");
 		//fw.write("\r\n");
 		//fw.write("\r\n");
-		fw.write(System.lineSeparator());
-		fw.write(System.lineSeparator());
-		fw.write("Lalalalllallalla");
+		bw.write(System.lineSeparator());
+		bw.write(System.lineSeparator());
+		bw.newLine();
+		bw.write("Lalalalllallalla");
 		
-		fw.close();
+		bw.close();
 	}
 }

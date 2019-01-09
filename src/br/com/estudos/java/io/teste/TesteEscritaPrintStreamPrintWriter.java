@@ -1,13 +1,9 @@
 package br.com.estudos.java.io.teste;
 
-import java.io.BufferedWriter;
-import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.OutputStream;
-import java.io.OutputStreamWriter;
+
 import java.io.PrintStream;
 import java.io.PrintWriter;
-import java.io.Writer;
 
 public class TesteEscritaPrintStreamPrintWriter {
 	public static void main(String[] args) throws IOException {
@@ -26,12 +22,15 @@ public class TesteEscritaPrintStreamPrintWriter {
 		//bw.close();
 		
 		PrintStream ps = new PrintStream("lorem2.txt");
-		PrintWriter pw = new PrintWriter("lorem2.txt");
 		ps.println("Testando a escrita com uma outra classa, a PrintStream");
 		ps.println();
 		ps.println("Eita, lalalaaalala");
 		
 		ps.close();
+		
+		PrintWriter pw = new PrintWriter("lorem2.txt");
+		pw.println("Testando a escrita usando outra classe, a PrintWriter");
+		pw.close();
 	
 	}
 }

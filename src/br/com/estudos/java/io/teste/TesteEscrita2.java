@@ -28,6 +28,8 @@ public class TesteEscrita2 {
 		ps.println("Testando a escrita com uma outra classa, a PrintStream");
 		ps.println();
 		ps.println("Eita, lalalaaalala");
+		
+		ps.close();
 	
 	}
 }

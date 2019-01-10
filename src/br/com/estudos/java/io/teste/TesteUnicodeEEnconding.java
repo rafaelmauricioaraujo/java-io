@@ -8,7 +8,7 @@ public class TesteUnicodeEEnconding {
 	
 	public static void main(String[] args) throws UnsupportedEncodingException {
 		
-		String s = "CCCC";
+		String s = "C";
 		
 		//Imprimindo o código Unicode do string s
 		System.out.println(s.codePointAt(0));
@@ -32,6 +32,10 @@ public class TesteUnicodeEEnconding {
 		//Outra maneira de fazer o mesmo
 		bytes = s.getBytes(StandardCharsets.US_ASCII);
 		System.out.println(bytes.length);
+		
+		//Fazendo o caminho inverso
+		String snovo = new String(bytes);
+		System.out.println(snovo);
 		
 	}
 }

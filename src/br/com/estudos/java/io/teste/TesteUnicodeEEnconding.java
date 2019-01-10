@@ -2,6 +2,7 @@ package br.com.estudos.java.io.teste;
 
 import java.io.UnsupportedEncodingException;
 import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
 
 public class TesteUnicodeEEnconding {
 	
@@ -27,5 +28,10 @@ public class TesteUnicodeEEnconding {
 		
 		bytes = s.getBytes("UTF-16");
 		System.out.println(bytes.length);
+		
+		//Outra maneira de fazer o mesmo
+		bytes = s.getBytes(StandardCharsets.US_ASCII);
+		System.out.println(bytes.length);
+		
 	}
 }

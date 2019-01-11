@@ -8,6 +8,7 @@ public class TesteSerializacao {
 	
 	public static void main(String[] args) throws IOException {
 				
+		/*
 		//Criando um objeto
 		String nome = "Rafael Araujo";
 		
@@ -19,6 +20,7 @@ public class TesteSerializacao {
 		
 		//fechando o arquivo
 		oss.close();
+		*/
 		
 	}
 

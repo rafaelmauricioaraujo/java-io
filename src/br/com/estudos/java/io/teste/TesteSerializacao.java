@@ -22,6 +22,9 @@ public class TesteSerializacao {
 		oss.close();
 		*/
 		
+		//fazendo o inverso: a partir de um arquivo binário transforma-lo em uma classe do java
+		
+		
 	}
 
 }

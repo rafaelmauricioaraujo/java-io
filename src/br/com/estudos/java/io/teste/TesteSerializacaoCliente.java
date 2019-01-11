@@ -10,7 +10,7 @@ public class TesteSerializacaoCliente {
 	
 	public static void main(String[] args) throws IOException, ClassNotFoundException {
 				
-		
+		/*
 		//Criando um objeto
 		Cliente cliente = new Cliente();
 		cliente.setNome("Rafael");
@@ -25,9 +25,15 @@ public class TesteSerializacaoCliente {
 		
 		//fechando o arquivo
 		oss.close();
+		*/
 		
 		//Fazendo a leitura do arquivo binário e salvando em uma instância de cliente
 		
+		ObjectInputStream ois = new ObjectInputStream(new FileInputStream("cliente.bin"));
+		Cliente cliente = (Cliente) ois.readObject();
+		ois.close();
+		
+		System.out.println(cliente.getNome());
+		
 	}
-
 }

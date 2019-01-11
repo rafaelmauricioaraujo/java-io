@@ -7,7 +7,7 @@ public class Cliente implements Serializable{
 	/**
 	 * 
 	 */
-	private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 1504207092629861639L;
 	private String nome;
 	private String cpf;
 	private String profissao;

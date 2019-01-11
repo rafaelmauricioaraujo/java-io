@@ -26,6 +26,8 @@ public class TesteSerializacaoCliente {
 		//fechando o arquivo
 		oss.close();
 		
+		//Fazendo a leitura do arquivo binário e salvando em uma instância de cliente
+		
 	}
 
 }

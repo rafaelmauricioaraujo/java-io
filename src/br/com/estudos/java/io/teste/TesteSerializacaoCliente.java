@@ -10,30 +10,21 @@ public class TesteSerializacaoCliente {
 	
 	public static void main(String[] args) throws IOException, ClassNotFoundException {
 				
-		/*
+		
 		//Criando um objeto
-		String nome = "Rafael Araujo";
+		Cliente cliente = new Cliente();
+		cliente.setNome("Rafael");
+		cliente.setProfissao("Dev");
+		cliente.setCpf("111222333-44");
 		
 		//Instanciando uma classe que transforma o objeto em um arquivo binário
-		ObjectOutputStream oss = new ObjectOutputStream(new FileOutputStream("objeto.bin"));
+		ObjectOutputStream oss = new ObjectOutputStream(new FileOutputStream("cliente.bin"));
 		
 		//gravando o objeto criado no arquivo binário
-		oss.writeObject(nome);
+		oss.writeObject(cliente);
 		
 		//fechando o arquivo
 		oss.close();
-		*/
-		
-		//fazendo o inverso: a partir de um arquivo binário transforma-lo em uma classe do java
-		
-		ObjectInputStream ois = new ObjectInputStream(new FileInputStream("objeto.bin"));
-		
-		//criando um objeto do tipo String para armazenar o objeto buscado e fazendo o casting
-		String nome = (String) ois.readObject();
-		
-		ois.close();
-		
-		System.out.println(nome);
 		
 	}
 
